@@ -276,6 +276,7 @@ export class NavBar extends React.PureComponent<{}, any> {
 
 
             <section className="left">
+                <a target="_blank" href="https://github.com/online-go/online-go.com/wiki/" rel="noopener">{_("Wiki")}</a>
                 {(!this.state.user.anonymous || null) && <Link to="/overview">{_("Home")}</Link>}
                 {user && <Link to="/play">{_("Play")}</Link>}
                 <Link to="/observe-games">{_("Games")}</Link>
